@@ -1,0 +1,44 @@
+﻿@model Zadatak2.Models.TodoViewModels.AddTodoViewModel
+@using Microsoft.AspNetCore.Http.Authentication
+
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        @{
+            ViewData["Title"] = "Add";
+        }
+    </title>
+</head>
+<body>
+    <h2><strong>Create new todo item</strong></h2>
+
+    <form asp-controller="Todo" asp-action="Add" method="post" class="form-horizontal">
+        <hr />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Text" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-default">Create</button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">See active todo items.</a>
+        <a asp-action="Completed">See completed todo items.</a>
+    </div>
+
+</body>
+</html>
+
+
+

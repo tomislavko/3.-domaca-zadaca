@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "exports": {
+    "Zadatak1/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/Zadatak1.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.0.0/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../packages/EntityFramework.6.0.0/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/Zadatak1.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Zadatak1.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
